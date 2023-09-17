@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>BuyCam Accessory</title>
+    <link rel="website icon" type="png" href="images/logo-2.png">
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+</head>
+<body>
+    <nav>
+        <a href="#home"><img src="images/logo-2.png" alt="" class="logo"></a>
+        <input type="checkbox" id="toggle" class="input-1" hidden>
+        <label for="toggle" hidden class="lable-1"  ><i class="fa fa-thin fa-bars" id="toggle" style="font-size:xx-large; color: azure; z-index: 100;"> Menu</i></label>
+        <div class="nav">
+            <ul>
+                <li><a href="../index.html" target="_blank">Home</a></li>
+                <li><a href="accessory.html" target="_blank">Accessory</a></li>
+                <li><a href="shop.html" target="_blank">Shop</a></li>
+                <div class="box2">
+                    <div class="cart-count">0</div>
+                    <ion-icon name="cart" id="cart-icon"></ion-icon>
+                </div>
+                <li onclick="login()" style="color: aliceblue;"><button>Login</button></li>
+            </ul>
+            <div class="login1">
+                <div class="login">
+                    <form action="" id="front">
+                        <div class="log">
+                            <h2>Login</h2>
+                            <label for="name">Username</label>
+                            <input type="email" placeholder="Enter your Username">
+                            <label for="pass">Password</label>
+                            <input type="password" placeholder="Enter Password">
+                            <button class="button">Login</button>
+                            <div class="forget">
+                                <p>Forget <a href="">Password</a></p>
+                                <p>Dont have Account <a href="" onclick="signin()">Sign-in</a></p>
+
+                                <!-- <div class="login1 sign-in">
+                                    <form action="" id="front">
+                                        <div class="log">
+                                            <h2>Login</h2>
+                                            <label for="name">Username</label>
+                                            <input type="email" placeholder="Enter your Username">
+                                            <label for="pass">Password</label>
+                                            <input type="password" placeholder="Enter Password">
+                                            <p>Dont have Account <a href="">Sign-in</a></p>
+                                            <div class="forget">
+                                                <p>Forget <a href="">Password</a></p>
+                                                <button class="button" onclick="login()">Login</button>
+                                            </div>
+                            
+                                        </div>
+                                    </form>
+                                </div> -->
+                            </div>
+            
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+
+    <header>
+        <div class="nav">
+          <div class="cart">
+            <div class="cart-title">Cart Items</div>
+            <div class="cart-content">
+              <!--
+            <div class="cart-box">
+              <img src="images/97.jpg" class="cart-img">
+              <div class="detail-box">
+                <div class="cart-cam-title">Special Dosai</div>
+                <div class="price-box">
+                  <div class="cart-price">Rs.00,00,000</div>
+                   <div class="cart-amt">Rs.00,00,000</div>
+               </div>
+                <input type="number" value="1" class="cart-quantity">
+              </div>
+              <ion-icon name="trash" class="cart-remove"></ion-icon>
+            </div>
+  
+            <div class="cart-box">
+              <img src="images/97.jpg" class="cart-img">
+              <div class="detail-box">
+                <div class="cart-cam-title">Special Dosai</div>
+                <div class="price-box">
+                  <div class="cart-price">Rs.00,00,000</div>
+                   <div class="cart-amt">Rs.00,00,000</div>
+               </div>
+                <input type="number" value="1" class="cart-quantity">
+              </div>
+              <ion-icon name="trash" class="cart-remove"></ion-icon>
+            </div>
+          -->
+            </div>
+  
+            <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">Rs.0</div>
+            </div>
+  
+            <button class="btn-buy">Place Order</button>
+  
+            <ion-icon name="close" id="cart-close"></ion-icon>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <h2 class="title">Discover the Best Cameras Accessorys</h2>
+        <div class="shop-content">
+          
+          <div class="item-box">
+            <div class="pic"><img src="images/herchr.jpg" class="cam-img" /></div>
+            <h2 class="cam-title">NAFA 3110</h2>
+            <p>NAFA 3110 Portable and Foldable Tripod with Mobile Clip Holder Bracket Tripod, Tripod Bracket  (Black, Supports Up to 490 g)</p>
+            <span class="cam-price">Rs.349</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+  
+          <div class="item-box">
+            <div class="pic">
+              <img src="images/Tygot 13.jpg" class="cam-img" />
+            </div>
+            <h2 class="cam-title">Tygot 13</h2>
+            <p>Tygot 13 inch Flexible Gorillapod Tripod with Mobile Attachment for DSLR, Action Cameras & Smartphones Tripod, Tripod Kit  (Black/White, Supports Up to 3000 g)</p>
+            <span class="cam-price">Rs.299</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+  
+          <div class="item-box">
+            <div class="pic"><img src="images/gopro-mount.jpg" class="cam-img" /></div>
+            <h2 class="cam-title">GoPro</h2>
+            <p>Adofys Flat Surface Stand Camera Mount  (black)</p>
+            <span class="cam-price">Rs.2999</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+  
+          <div class="item-box">
+            <div class="pic">
+              <img src="images/canon-lens.jpg" class="cam-img" />
+            </div>
+            <h2 class="cam-title">Canon EF 50 mm</h2>
+            <p>Canon EF 50 mm f/1.8 STM Standard Prime Lens  (Black, 50 mm)</p>
+            <span class="cam-price">Rs.10490</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+  
+          <div class="item-box">
+            <div class="pic">
+              <img src="images/sony-lenc.jpg" class="cam-img" />
+            </div>
+            <h2 class="cam-title">Sony</h2>
+            <p>SONY SEL55210/BQ Telephoto Zoom Lens  (Black, 315 mm)
+            <span class="cam-price">Rs.18430</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+  
+          <div class="item-box">
+            <div class="pic"><img src="images/sony-lenc2.jpg" class="cam-img" /></div>
+            <h2 class="cam-title">SONY SEL200600G</h2>
+            <p>SONY SEL200600G Telephoto Zoom Lens  (White, 200 - 600 mm)</p>
+            <span class="cam-price">Rs.146890</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+  
+          <div class="item-box">
+            <div class="pic">
+              <img src="images/dji.jpeg" class="cam-img" />
+            </div>
+            <h2 class="cam-title">DJI OSMO</h2>
+            <p>dji OSMO Mobile SE Intelligent Gimbal 3 Axis Gimbal for Mobile  (230)</p>
+            <span class="cam-price">Rs.8990</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+  
+          <div class="item-box">
+            <div class="pic">
+              <img src="images/Nikon-20mm-lens.jpg" class="cam-img" />
+            </div>
+            <h2 class="cam-title">NIKON AF-S Nikkor 20 mm</h2>
+            <p>NIKON AF-S Nikkor 20 mm f/1.8G ED Wide-angle Prime Lens  (Black)</p>
+            <span class="cam-price">Rs.29490</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+  
+          <div class="item-box">
+            <div class="pic">
+              <img src="images/cam-skin.jpg" class="cam-img" />
+            </div>
+            <h2 class="cam-title">Saifee Camera Skin</h2>
+            <p>Saifee Camera Skin Sticker for Canon EOS R paper Laptop Decal 0</p>
+            <span class="cam-price">Rs.999</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="item-box">
+            <div class="pic">
+              <img src="images/SK GREEN 7.jpg" class="cam-img" />
+            </div>
+            <h2 class="cam-title">SK GREEN</h2>
+            <p>SK GREEN 7 Feet Tripod stand camera stand photography, selfie video with mobile holder Tripod  (Black Metal, Supports Up to 2000 g)</p>
+            <span class="cam-price">Rs.890</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    <center>
+        <div class="waviy">
+            <span style="--i:1">b</span>
+            <span style="--i:2">u</span>
+            <span style="--i:3">y</span>
+            <span style="--i:4">📷</span>
+            <span style="--i:5">c</span>
+            <span style="--i:6">a</span>
+            <span style="--i:7">m</span>
+        </div>
+    </center>
+    <footer>
+        <div class="contact">
+            <div class="about">
+                <h1 class="name">BuyCam</h1>
+                <p>The new hero pieces bring instant fashion credibility. Bright florals clash with camouflage prints.</p>
+                <h2>Follow us on</h2>
+                <div class="folow">
+                    <a href=""><i class="fa fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="info">
+                <h2>Information</h2>
+                <a href="">About</a>
+                <a href="">Service</a>
+                <a href="">Delivery Information</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Term & Condition</a>
+                <a href="">Return Policy</a>
+            </div>
+            <div class="account">
+                <h2>My Account</h2>
+                <a href="">My Account</a>
+                <a href="">Cart</a>
+                <a href="">Check Out</a>
+                <a href="">Contact</a>
+                <a href="">Validation</a>
+                <a href="">WishList</a>
+            </div>
+            <div class="touch">
+                <h2>Get in Touch</h2><br>
+                <p>🏠 Hill Road Bandra, Mumbai, Maharashtra</p>
+                <p>📞 +91-123456789</p>
+                <a href="">📧 cam@buy.com</a>
+                <p>☎️ 07147-257504</p>
+                <p>💳 📲 💵 💶 🪙</p>
+            </div>
+        </div>
+        <hr>
+        <h4>&copy; 2023 BuyCam. Made with 💖 By <mark>Gaurav Kalbhor</mark></h4>
+
+    </footer>
+
+    <!-- aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/login.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+    </script>
+    <script src="js/shop.js"></script>
+</body>
+</html>

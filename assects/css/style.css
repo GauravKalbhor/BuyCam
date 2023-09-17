@@ -1,0 +1,341 @@
+body{
+    color: black;
+    font-family: cursive;
+    background: rgb(10, 10, 62);
+}
+
+/* navigation part------------> */
+nav{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    width: 100%;
+}
+ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+li{
+    list-style: none;
+    padding: 0 2%;
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: azure;
+}
+ul:hover{
+    scroll-snap-align: top;
+    height: 5vh;
+    background-color: black;
+}
+li a:hover{
+    color: azure;
+    background-color:cadetblue;
+    transition: ease-in-out 1s;
+    padding: 2% 15%;
+    text-decoration: underline;
+}
+
+/* logo--------------> */
+.logo{
+    color: azure;
+    width: 100px;
+    margin: 0 20px;
+}
+
+/* login signin part----------> */
+.login1{
+    color: aliceblue;
+    border: 2px solid skyblue;
+    width: 55%;
+    height: 75vh;
+    padding: 1% 5%;
+    margin: 1.5% 17%;
+    background-image: url(/assects/images/logo.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background: linear-gradient(to top left, red, pink, blue); */
+    /* line-height: 50px; */
+    display: none;
+    z-index: 100;
+    position: absolute;
+    top: 7rem;
+    right: 0.5%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 100;
+}
+form h2{
+    text-align: center;
+    color: aqua;
+    font-size: 50px;
+}
+.log{
+    line-height: 40px;
+}
+form input{
+    width: 95%;
+    border-radius: 1rem;
+    background-color: #ffffff61;
+    color: #fff;
+}
+form .button{
+    margin: 20px 35% 0;
+    width: 30%;
+}
+.forget a{
+    color: blue;
+}
+.forget a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+
+/* header part -----------------------> */
+/* header{
+    background-image: url(/assects/images/logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+.top{
+    margin-bottom: 10%;
+    display: flex;
+}
+.text{
+    display: block;
+    margin: 5% 0 0 5%;
+}
+h1{
+    color: azure;
+    font-size: 70px; 
+}
+
+.circle{
+    width: 65%;
+    height: 90vh;
+    /* filter: drop-shadow(-10px -5px 15px #e3f0e3) drop-shadow(15px 10px 15px #e3f0e3); */
+    transform: scale(1);
+	animation: pulse 4s infinite;
+}
+@keyframes pulse {
+	0%   { filter:drop-shadow(0 0 0 black); }
+    50%  { filter:drop-shadow(0 0 17px azure); }
+    100% { filter:drop-shadow(0 0 0 black); }
+}
+.button{
+    border-radius: 2rem;
+    padding: 1% 3%;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 2% 4%;
+    box-shadow: 5px 2px 5px azure;
+}
+.button:hover{
+    box-shadow: 10px 5px 15px black;
+    background-color: black;
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+/* main part-------------------------> */
+
+.content-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cam{
+    margin: 2% 0;
+}
+.box{
+    background: aliceblue;
+    width: 45%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box:hover{
+    box-shadow: 15px 15px 5px rgb(69, 75, 82);
+}
+.text-2{
+    text-align: center;
+    margin: 5% 0;
+}
+.text-2 h4{
+    color: red;
+}
+.text-2 h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+.box .p1{
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    font-family: sans-serif;
+}
+.box p{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2%;
+    width: 90%;
+}
+.image img{
+    width: 30dvh;
+    /* height: 0vh; */
+}
+
+
+/* poupler item----------> */
+
+h2{
+    color: aliceblue;
+    font-size: 25px;
+    margin: 5%;
+}
+.content-2{
+    width: 100%;
+    
+}
+.one{
+    /* padding: 2%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.one img{
+    padding: 3% 1%;
+    width: 30%;
+    height: auto;
+}
+
+/* subscribe part ----------------> */
+.subscribe{
+    margin: 1% 3%;
+    width: 95%;
+    background-color: rgb(53, 72, 108);
+    display: flex;
+}
+.mail{
+    color: black;
+    width: 50%;
+    padding: 2% 5%;
+    line-height: 50px;
+}
+.hh{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.sub{
+    color: red;
+}
+input{
+    width: 70%;
+    padding: 2% 3%;
+    border-radius: 3rem;
+    font-size: 18px;
+}
+.sub-img{
+    width: 40%;
+    padding: 2%;
+}
+
+/* waviy part -------------> */
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 50px;
+  }
+  .waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+/* fotter part -----------> */
+footer{
+    background-color: black;
+    padding: 2%;
+}
+.contact{
+    display: flex;
+}
+.about, .info, .account, .touch{
+    width: 25%;
+    color: aliceblue;
+    padding: 1% 2%;
+}
+.info, .account, .touch{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 35px;
+    text-align: center;
+}
+.touch{
+    width: 25%;
+    line-height: 25px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}
+.folow .fa{
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    font-size: x-large;
+    text-align: center;
+    padding: 2% 3%;
+    margin: 10px;
+}
+.fa:hover{
+    background-color: aqua;
+    color: black;
+}
+.name{
+    font-family: cursive;
+}
+hr{
+    width: 97%;
+}
+h4{
+    color: azure;
+    text-align: center;
+    font-family: cursive;
+    font-size: larger;
+    padding: 1% 0;
+}
+mark{
+    color: blue;
+    background: transparent;
+}
+
+q{
+    font-size: 20px;
+}

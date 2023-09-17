@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="website icon" type="png" href="images/logo-2.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <a href="#home"><img src="images/logo-2.png" alt="" class="logo" /></a>
+      <input type="checkbox" id="toggle" class="input-1" hidden />
+      <label for="toggle" hidden class="lable-1"><i class="fa fa-thin fa-bars" id="toggle" style="font-size: xx-large; color: azure; z-index: 100">Menu</i></label>
+      <div class="nav">
+        <ul>
+          <li><a href="../index.html" target="_blank">Home</a></li>
+          <li><a href="accessory.html" target="_blank">Accessory</a></li>
+          <li><a href="shop.html" target="_blank">Shop</a></li>
+          <div class="box2">
+            <div class="cart-count">0</div>
+            <i class="fa fa-solid fa-cart-plus" id="cart-icon"></i>
+          </div>
+          <li onclick="login()" style="color: aliceblue;"><button>Login</button></li>
+
+        </ul>
+        <div class="login1">
+          <div class="login">
+              <form action="" id="front">
+                  <div class="log">
+                      <h2>Login</h2>
+                      <label for="name">Username</label>
+                      <input type="email" placeholder="Enter your Username">
+                      <label for="pass">Password</label>
+                      <input type="password" placeholder="Enter Password">
+                      <button class="button">Login</button>
+                      <div class="forget">
+                          <p>Forget <a href="">Password</a></p>
+                          <p>Dont have Account <a href="" onclick="signin()">Sign-in</a></p>
+
+                          <!-- <div class="login1 sign-in">
+                              <form action="" id="front">
+                                  <div class="log">
+                                      <h2>Login</h2>
+                                      <label for="name">Username</label>
+                                      <input type="email" placeholder="Enter your Username">
+                                      <label for="pass">Password</label>
+                                      <input type="password" placeholder="Enter Password">
+                                      <p>Dont have Account <a href="">Sign-in</a></p>
+                                      <div class="forget">
+                                          <p>Forget <a href="">Password</a></p>
+                                          <button class="button" onclick="login()">Login</button>
+                                      </div>
+                      
+                                  </div>
+                              </form>
+                          </div> -->
+                      </div>
+      
+                  </div>
+              </form>
+          </div>
+      </div>
+      </div>
+    </nav>
+    <header>
+      <div class="nav">
+        <div class="cart">
+          <div class="cart-title">Cart Items</div>
+          <div class="cart-content">
+            <!--
+          <div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-cam-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.00,00,000</div>
+                 <div class="cart-amt">Rs.00,00,000</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+
+          <div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-cam-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.00,00,000</div>
+                 <div class="cart-amt">Rs.00,00,000</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+        -->
+          </div>
+
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs.0</div>
+          </div>
+
+          <button class="btn-buy" onclick="buy()">Place Order</button>
+
+          <ion-icon name="close" id="cart-close"></ion-icon>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <h2 class="title">Discover the Best Cameras</h2>
+      <div class="shop-content">
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/cam.png" class="cam-img" />
+          </div>
+          <h2 class="cam-title">Canon EOS R5</h2>
+          <p>
+            Canon EOS R5 45MP Full-Frame Mirrorless Digital Camera Body (8K RAW
+            Video, 4K 120p Video, 20 FPS, Eye Auto Focus, Upto 8 Stop is) -
+            Black
+          </p>
+          <span class="cam-price">Rs.295490</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="item-box">
+          <div class="pic"><img src="images/sony.jpg" class="cam-img" /></div>
+          <h2 class="cam-title">Sony Alpha III</h2>
+          <p>
+            Sony Alpha ILCE-7M3 Full-Frame 24.2MP Mirrorless Digital SLR Camera
+            Body (4K Full Frame, Real-Time Eye Auto Focus, 4K Vlogging Camera,
+            Tiltable LCD, Low Light Camera) - Black
+          </p>
+          <span class="cam-price">Rs.129990</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/canon-r10.png" class="cam-img" />
+          </div>
+          <h2 class="cam-title">Canon EOS R10</h2>
+          <p>
+            Canon EOS R10 24.2MP Mirrorless Digital Camera with RF-S18-150mm Kit
+            Lens (APS-C Sensor, 23 FPS, Next Gen Auto Focus, Next Level Image
+            Stabilisation, 4K) – Black
+          </p>
+          <span class="cam-price">Rs.96490</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/canon-1500d.jpg" class="cam-img" />
+          </div>
+          <h2 class="cam-title">Canon EOS 1500D</h2>
+          <p>
+            Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II
+            Lens
+          </p>
+          <span class="cam-price">Rs.41989</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/Panasonic.jpg" class="cam-img" />
+          </div>
+          <h2 class="cam-title">Panasonic</h2>
+          <p>
+            Panasonic LUMIX G7 16.00 MP 4K Mirrorless Interchangeable Lens
+            Camera Kit with 14-42 mm Lens (Black) with 3x Optical Zoom
+          </p>
+          <span class="cam-price">Rs.295490</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/nikon-z7.jpg" class="cam-img" />
+          </div>
+          <h2 class="cam-title">Nikon Z7 II</h2>
+          <p>
+            Nikon Mirrorless Z7 II Body with 24-70mm Lens with Additional
+            Battery, Optical Zoom, Black
+          </p>
+          <span class="cam-price">Rs.269990</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="item-box">
+          <div class="pic"><img src="images/dji.jpeg" class="cam-img" /></div>
+          <h2 class="cam-title">DJI Action cam</h2>
+          <p>
+            DJI Osmo Action 4 Standard Combo - 4K/120fps Waterproof Action
+            Camera with a 1/1.3-Inch Sensor, 10-bit & D-Log M Color Performance,
+            Outdoor Camera for Travel, Biking
+          </p>
+          <span class="cam-price">Rs.38990</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="item-box">
+          <div class="pic"><img src="images/gopro.jpg" class="cam-img" /></div>
+          <h2 class="cam-title">GoPro</h2>
+          <p>
+            GoPro HERO11 Black Mini- Compact Waterproof Action Camera with
+            5.3K60 Ultra HD Video, 24.7MP Frame Grabs, 1/1.9" Image Sensor, Live
+            Streaming, Stabilization
+          </p>
+          <span class="cam-price">Rs.37990</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/insta360.jpg" class="cam-img" />
+          </div>
+          <h2 class="cam-title">INSTA360</h2>
+          <p>
+            INSTA360 ONE RS 4K Edition 1 x Optical Zoom Waterproof 4K 60fps
+            Action Camera with FlowSate Stabilization, 48MP Photo, Active HDR,
+            AI Editing, Standard, Vivid, Log
+          </p>
+          <span class="cam-price">Rs.29490</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/sony zv-1f.jpg" class="cam-img" />
+          </div>
+          <h2 class="cam-title">Sony Zv-1F</h2>
+          <p>
+            Sony Zv-1F Vlog Camera for Content Creators&Vloggers with Ultra-Wide
+            20Mm Prime Lens|Soft Skin Feature|Bokeh|Creative Look|Active Mode
+            Stabilisation,Digital Zoom
+          </p>
+          <span class="cam-price">Rs.46990</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/Olympus TG 6.jpg" class="cam-img" />
+          </div>
+          <h2 class="cam-title">Olympus TG 6</h2>
+          <p>
+            Olympus TG – 6 Black Water Proof Camera, 12 MP, 4X Zoom Lens, LCD
+            Rear Screen
+          </p>
+          <span class="cam-price">Rs.41348</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/pixal.jpg" class="cam-img" />
+          </div>
+          <h2 class="cam-title">Sony CyberShot</h2>
+          <p>
+            Sony CyberShot DSC W690 Digital Camera Full Specifications (20.1 MP, 5 Optical Zoom, 13x Digital Zoom, Black)
+          </p>
+          <span class="cam-price">Rs.10990</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/canon-powershot.jpg" class="cam-img" />
+          </div>
+          <h2 class="cam-title">Canon PowerShot </h2>
+          <p>
+            Canon PowerShot SX620 20.2MP DSLR Camera Full Specifications
+            Hybrid Auto, Creative Shot, AUTO, Programme, Portrait, Smart Shutter, High-speed Burst, Handheld NightScene, Low Light, Fish-eye Effect, Miniature Effect, Toy Camera Effect, Monochrome, Super Vivid, Poster Effect, Snow, Fireworks, Long Shutter
+          </p>
+          <span class="cam-price">Rs.14574</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/Canon ELPH LT 260 20MP.jpg" class="cam-img" />
+          </div>
+          <h2 class="cam-title">Canon ELPH LT 260</h2>
+          <p>
+            Canon ELPH LT 260 20MP DSLR Camera Full Specifications
+            Picture frame, AF frame, Close-up frame, Close-up AF frame Green indicator Combination camera-ready indicator and too-close warning Orange indicator Combination flash ready indicator and camera shake warning
+          </p>
+          <span class="cam-price">Rs.17707</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/Panasonic Lumix.jpg" class="cam-img" />
+          </div>
+          <h2 class="cam-title">Panasonic Lumix</h2>
+          <p>
+            Panasonic Lumix DMC-FS12 12.1MP Digital Camera Full Specifications
+            The lowest price of Panasonic Lumix DMC-FS12 12.1MP Digital Camera is ₹ 18,247 
+          </p>
+          <span class="cam-price">Rs.18247</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/Ricoh Pentax.jpg" class="cam-img" />
+          </div>
+          <h2 class="cam-title">Ricoh Pentax</h2>
+          <p>
+            Ricoh Pentax Q10 12.4MP DSLR Camera Full Specifications
+            Auto Picture Mode automatic selection of Standard, Portrait, Landscape, Macro, Night Scene Portrait, Night Scene, Blue Sky, Forest, Scene Mode Portrait, Landscape, Macro, Moving Object, Night Scene Portrait, Sunset, Blue Sky, Night Scene, Night Scene HDR, Night Snap, Food, Quick Macro, Pet, Kids, Forest, Surf & Snow, HDR, Backlight Silhouette, Candlelight, Stage Lighting, Museum, Program, Shutter Priority, Aperture Priority, Manual, Bulb, Blur Control HDR, Quick Macro, Night Scene HDR and Blur Control are JPEG only.
+          </p>
+          <span class="cam-price">Rs.18000</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="item-box">
+          <div class="pic">
+            <img src="images/OBSBOT Tiny PTZ.jpg" class="cam-img" />
+          </div>
+          <h2 class="cam-title">OBSBOT Tiny PTZ</h2>
+          <p>
+            OBSBOT Tiny PTZ 4K Webcam, AI Powered Framing & Autofocus, 4K Video
+            Conference Camera with Omni-Directional Mics, Auto Tracking with 2
+            axis Gimbal,HDR,60 FPS, Low-Light Correction
+          </p>
+          <span class="cam-price">Rs.41348</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <center>
+      <div class="waviy">
+          <span style="--i:1">b</span>
+          <span style="--i:2">u</span>
+          <span style="--i:3">y</span>
+          <span style="--i:4">📷</span>
+          <span style="--i:5">c</span>
+          <span style="--i:6">a</span>
+          <span style="--i:7">m</span>
+      </div>
+    </center>
+    <br>
+    <footer>
+        <div class="contact">
+            <div class="about">
+                <h1 class="name">BuyCam</h1>
+                <p>The new hero pieces bring instant fashion credibility. Bright florals clash with camouflage prints.</p>
+                <h2>Follow us on</h2>
+                <div class="folow">
+                    <a href=""><i class="fa fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="info">
+                <h2>Information</h2>
+                <a href="">About</a>
+                <a href="">Service</a>
+                <a href="">Delivery Information</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Term & Condition</a>
+                <a href="">Return Policy</a>
+            </div>
+            <div class="account">
+                <h2>My Account</h2>
+                <a href="">My Account</a>
+                <a href="">Cart</a>
+                <a href="">Check Out</a>
+                <a href="">Contact</a>
+                <a href="">Validation</a>
+                <a href="">WishList</a>
+            </div>
+            <div class="touch">
+                <h2>Get in Touch</h2><br>
+                <p>🏠 Hill Road Bandra, Mumbai, Maharashtra</p>
+                <p>📞 +91-123456789</p>
+                <a href="">📧 cam@buy.com</a>
+                <p>☎️ 07147-257504</p>
+                <p>💳 📲 💵 💶 🪙</p>
+            </div>
+        </div>
+        <hr>
+        <h4>&copy; 2023 BuyCam. Made with 💖 By <mark>Gaurav Kalbhor</mark></h4>
+
+    </footer>
+    <script src="js/shop.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

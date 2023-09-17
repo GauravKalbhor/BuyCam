@@ -1,0 +1,177 @@
+@media(max-width:500px){
+    nav{
+        display: block;
+    }
+    .nav{
+        visibility: hidden; 
+    }
+    .lable-1{
+        display: block;
+        color: azure;
+    }
+    #toggle:checked~.nav{
+        width: 100%;
+        visibility: visible;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    /* top---------> */
+    .top{
+        display: block;
+    }
+    .circle{
+        width: 100%;
+    }
+
+    /* main ----------> */
+    .content-1, .box{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .image img{
+        width: 95%;
+        padding: 2%;
+    }
+    /* subscribe -----------> */
+    .subscribe{
+        display: block;
+    }
+    .mail{
+        width: auto;
+    }
+    input{
+        width: 90%;
+    }
+    .btn{
+        margin: 0 35%;
+    }
+    .sub-img{
+        width: 95%;
+    }
+
+    /* footer-----------> */
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .name{
+        font-size: 30px;
+    }
+    .about, .info, .account, .touch{
+        width: 40%;
+        text-align: center;
+        border-bottom: 2px solid gray;
+    }
+    h4{
+        font-size: medium;
+    }
+
+
+    /* shop media qury -----------> */
+    .container{
+        grid-template-columns: auto;
+    }
+    .grid-box{
+        padding: 1%;
+    }
+    .grid-one{
+        width: 90%;
+        height: auto;
+    }
+    .grid-one img{
+        height: 30vh;
+    }
+    .waviy{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 500px){
+    nav{
+        display: block;
+    }
+    .nav{
+        visibility: hidden; 
+    }
+    .lable-1{
+        display: block;
+        color: azure;
+    }
+    #toggle:checked~.nav{
+        width: 100%;
+        visibility: visible;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    /* top---------> */
+    .top{
+        display: block;
+    }
+    .circle{
+        width: 100%;
+    }
+
+    /* main ----------> */
+    .content-1, .box{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .image img{
+        width: 95%;
+        padding: 2%;
+    }
+    /* subscribe -----------> */
+    .subscribe{
+        display: block;
+    }
+    .mail{
+        width: auto;
+    }
+    input{
+        width: 90%;
+    }
+    .btn{
+        margin: 0 35%;
+    }
+    .sub-img{
+        width: 95%;
+    }
+
+    /* footer-----------> */
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .name{
+        font-size: 30px;
+    }
+    .about, .info, .account, .touch{
+        width: 40%;
+        text-align: center;
+        border-bottom: 2px solid gray;
+    }
+    h4{
+        font-size: medium;
+    }
+    
+    /* shop media qury -----------> */
+    .container{
+        grid-template-columns: auto auto;
+    }
+    .grid-box{
+        padding: 1%;
+    }
+    .grid-one{
+        width: 90%;
+        height: auto;
+    }
+    .grid-one img{
+        height: 30vh;
+    }
+}
